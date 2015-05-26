@@ -16,7 +16,7 @@ class puppet::params {
   ## global parameters
   $root_group = $::operatingsystem ? {
     /(FreeBSD|Solaris)/ => 'wheel',
-    default               => 'root',
+    default             => 'root',
   }
 
   # system default settings.
